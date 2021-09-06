@@ -1,0 +1,154 @@
+/* Import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* Base styling */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+  line-height: 1.4;
+  background: #c3c3c3;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Navigation bar */
+
+#navbar {
+  background: #333;
+  color: #fff;
+}
+
+#navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#navbar .container h1 {
+  font-size: 28px;
+}
+
+#navbar .container ul {
+  display: flex;
+}
+
+#navbar .container a {
+  font-size: 15px;
+  padding: 3px 0;
+  margin-left: 18px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar a.current {
+  border-bottom: 2px solid #c3c3c3;
+}
+
+#navbar a:hover {
+  border-bottom: 2px solid #c3c3c3;
+}
+
+/* Header */
+
+#showcase {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase:before {
+  content: '';
+  background: url('../bgs/tasks-bg.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 2.4rem;
+}
+
+#showcase .showcase-content h2 {
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+#showcase .showcase-content a {
+  padding: 3px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#showcase .showcase-content a:hover {
+  border-bottom: 2px solid #c3c3c3;
+}
+
+/* SHY'S EDIT */
+
+/*Body*/
+
+/* Not working for some reason */
+
+.tdlist{
+  background: #fff;
+  width: 70%;
+  margin: auto;
+}
+
+.tdlist #title {
+  text-align: center;
+  color: #333;
+}
+.tdlist #myform{
+  text-align: center;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 20px 20px;
+  
+}
+
+#addtask {
+  color: #333;
+}

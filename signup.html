@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>UniNote | Signup</title>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="logo">
+      <h1>
+        <i class="fas fa-book-open"></i>
+        UniNote
+      </h1>
+    </div>
+    <div class="content-ctr">
+      <div class="content-all">
+        <h1>Signup For UniNote</h1>
+        <h2>Please enter the following information:</h2>
+        <form onsubmit="return check_input()" action="signup.php" method="POST">
+          <div class="input-fld">
+            <input type="text" id="email" name="email" placeholder="Enter username" autocomplete="off">
+          </div>
+          <div class="input-fld">
+            <input type="text" id="password" name="password" placeholder="Enter password" autocomplete="off">
+          </div>
+          <div class="input-fld">
+            <input type="text" id="fname" name="fname" placeholder="Enter first name" autocomplete="off">
+          </div>
+          <div class="input-fld">
+            <input type="text" id="lname" name="lname" placeholder="Enter last name" autocomplete="off">
+          </div>
+          <div class="input-fld">
+            <input type="text" id="college" name="college" placeholder="Enter college" autocomplete="off">
+          </div>
+          <div class="input-fld">
+            <input type="text" id="major" name="major" placeholder="Enter major" autocomplete="off">
+          </div>
+          <input type="submit" id="submit" value="Register">
+          <a href="index.html">Back To Login</a>
+          <p id="output_empty"></p>
+          <p id="output_email"></p>
+          <p id="output_specialok"></p>
+          <p id="output_specialbad"></p>
+          <p id="output_num"></p>
+        </form>
+      </div>
+    </div>
+  </header>
+  <script src="js/checker-signup.js"></script>
+</body>
+
+</html>
